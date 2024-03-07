@@ -1,0 +1,121 @@
+.container {
+  margin: 150px auto;
+  padding: 20px;
+  border: 1px solid #1b1fa7;
+  border-radius: 8px;
+  background-color: #ffffff;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    margin-top: 50px auto;
+    border: none;
+    padding: 10px;
+  }
+
+  .tableContainer {
+    overflow-x: auto;
+    width: 100%; /* Garante que a tabela ocupe a largura total */
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+
+    th, td {
+      border: 1px solid #1b1fa7;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: rgb(54, 111, 208);
+      color: #ffffff;
+    }
+  }
+
+  .formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+    .formGroup {
+      margin-bottom: 15px;
+      margin-left: 3%;
+      width: calc(30.33% - 10px); // Ajuste para manter os campos na mesma linha
+
+      @media (max-width: 768px) {
+        width: 95%;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: rgb(54, 111, 208);
+    }
+
+    input {
+      width: 98%;
+      padding: 8px;
+      border: 1px solid #1b1fa7;
+      border-radius: 4px;
+    }
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    .button {
+      margin-bottom: 15px;
+      background-color: #ff9000;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+      margin-left: 10px; // Adicionando um espaço entre os campos e o botão
+
+      &:hover {
+        background-color: #d94f04;
+        color: #ffffff;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0; // Removendo a margem lateral no modo responsivo
+      }
+    }
+
+    .button1 {
+      margin-bottom: 5px;
+      background-color: #007172;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+  
+      &:hover {
+        background-color: #025259;
+        color: #ffffff;
+        border-radius: 5px;
+      }
+  
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+  
+}
