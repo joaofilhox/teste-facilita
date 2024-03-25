@@ -1,6 +1,5 @@
 # Teste Facilita Juridico
-## Video
- https://www.loom.com/share/4bd17fa96783462c895974301d28a3ad
+
 ## Backend
 Para rodar esse projeto, entre na pasta backend e digite o comando:
 ```bash
